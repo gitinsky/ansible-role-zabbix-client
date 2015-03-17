@@ -4,7 +4,8 @@ Get with ```git clone https://github.com/gitinsky/ansible-role-zabbix-client.git
 
 # Vars
 
-```zabbix_server_active```
+Set address of your zabbix server with ```zabbix_server_active```
+
 
 # Notes
 
