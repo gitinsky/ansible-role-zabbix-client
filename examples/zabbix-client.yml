@@ -1,0 +1,5 @@
+---
+- hosts: zabbix-client
+  sudo: yes
+  roles:
+  - role: zabbix-client

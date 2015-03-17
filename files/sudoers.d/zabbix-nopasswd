@@ -1,0 +1,2 @@
+%zabbix ALL=(ALL) NOPASSWD: /usr/local/bin/listSmart.sh, /usr/local/bin/ubic_restart, /etc/zabbix/scripts/*
+%zabbix ALL=(backuppc) NOPASSWD: /usr/share/backuppc/bin/BackupPC_serverMesg status host(*)

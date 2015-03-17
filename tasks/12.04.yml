@@ -1,0 +1,11 @@
+- name: Zabbix 2.2 official repo
+  apt_repository: repo='deb http://repo.zabbix.com/zabbix/2.2/ubuntu/ precise main' state=present
+
+- name: Zabbix 2.2 official repo key
+  # apt_key: id=79EA5ED4 url=http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xD13D58E479EA5ED4 state=present
+  apt_key: url=http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xD13D58E479EA5ED4 state=present
+
+- name: Install zabbix and dependencies
+  apt: name={{ item }} state=latest update_cache=yes
+  with_items:
+      - zabbix-sender
