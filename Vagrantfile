@@ -43,7 +43,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.provision :ansible do |ansible|
     ansible.playbook = "examples/zabbix-client.yml"
-    ansible.verbose = "vvv"
+    # ansible.verbose = "vvv"
     ansible.sudo = true
     # ansible.tags = ['debug']
     ansible.groups = {
